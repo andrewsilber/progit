@@ -8,11 +8,13 @@ You can get a Git project using two main approaches. The first takes an existing
 
 ### Initializing a Repository in an Existing Directory ###
 
-If you’re starting to track an existing project in Git, you need to go to the project’s directory and type
+If you’re starting to track an existing project in Git which is NOT YET PART OF A REPOSITORY, you need to go to the project’s directory and type
 
 	$ git init
 
 This creates a new subdirectory named `.git` that contains all of your necessary repository files — a Git repository skeleton. At this point, nothing in your project is tracked yet. (See *Chapter 9* for more information about exactly what files are contained in the `.git` directory you just created.)
+
+Note that this should not be done if you are getting yourself set up to work with a reponsitory which already exists somewhere. In that instance, you would use git clone (see below).
 
 If you want to start version-controlling existing files (as opposed to an empty directory), you should probably begin tracking those files and do an initial commit. You can accomplish that with a few `git add` commands that specify the files you want to track, followed by a commit:
 
